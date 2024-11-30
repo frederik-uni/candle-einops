@@ -1,4 +1,8 @@
 mod backend;
+#[cfg(feature = "candle")]
+pub mod candle;
+#[cfg(feature = "tch")]
+mod tch;
 
 pub use candle_einops_macros::einops;
 
